@@ -1,14 +1,14 @@
-# Calculadora Python
+# Tarea RA1
 
-Bienvenido a la documentación de la Calculadora Python.
+Bienvenido a la documentación de la Actividad obligatoria Unidad 1 - Tarea RA1.
 
 ## Descripción
 
-Esta calculadora tiene una interfaz gráfica usando Tkinter.
+
 
 ## Uso
 
-Ejecuta el script `calculator/gui.py` para iniciar la calculadora.
+
 
 ## Requisitos
 
