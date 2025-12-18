@@ -30,20 +30,7 @@ He documentado detalladamente el código fuente de la aplicación `lavadero.py` 
 - El significado de cada constante y atributo
 - El funcionamiento de cada método
 - El flujo de control y las reglas de negocio
-
-### Resumen de elementos clave documentados
-
-| Elemento                    | Descripción breve                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| `class Lavadero`            | Clase principal que simula el túnel de lavado                                     |
-| Constantes `FASE_INACTIVO` a `FASE_ENCERADO` | Representan las 9 fases posibles del proceso (0-8)                                |
-| `__init__`                  | Inicializa el lavadero en estado inactivo (requisito 1)                           |
-| Propiedades `@property`     | Acceso seguro de solo lectura a atributos privados                                |
-| `terminar()`                | Restablece el lavadero al estado inicial                                          |
-| `hacerLavado(...)`          | Inicia lavado validando reglas (requisitos 2 y 3)                                 |
-| `_cobrar()`                 | Calcula ingresos según opciones (requisitos 4-8)                                   |
-| `avanzarFase()`             | Gestiona el flujo secuencial de fases (requisitos 9-14)                           |
-| `imprimir_estado()`         | Muestra información completa del estado actual                                    |
+                                |
 
 ---
 
