@@ -63,6 +63,7 @@ Para finalizar la ejecución en ***terminal*** voy a salir y borrar el entorno v
 deactivate && rm -rf .venv
 ~~~
 ![desactivar entorno virtual](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img12.png)
+
 ---
 
 ## Depuración visual en el IDE (Visual Studio Code)

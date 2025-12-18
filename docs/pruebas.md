@@ -4,6 +4,7 @@ Lo primero que he hecho ha sido crear una carpeta llamada test, y dentro de la m
 ![creacion de archivos y carpetas](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img20.png)
 
 Dentro de este archivo he añadido las 14 pruebas `Testlavadero` utilizando *Unittest*, con 14 métodos de test correspondientes a cada requisito de la tarea.
+
 ---
 
 ## Pruebas realizadas
@@ -19,6 +20,7 @@ Python -m unittest ./tests/test_lavadero_unittest.py -v
 ~~~
 el cual me ha dado el siguiente resultado:
 ![resultado unnittest](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img21.png)
+
 ---
 
 ## Corrección de fallos
@@ -49,6 +51,7 @@ Si hay secado o encerado va a fase 6 (secado automático) en vez de 7. Además n
 **Solución**
 Poner tal cual lo que hay en la imagen a continuación
 ![error 3 unittest](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img24.png)
+
 ---
 
 ## Ejecución después de corrección
