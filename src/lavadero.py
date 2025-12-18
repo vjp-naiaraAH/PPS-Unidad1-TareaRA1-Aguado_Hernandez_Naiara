@@ -64,12 +64,15 @@ class Lavadero:
         """
         Inicia un nuevo ciclo de lavado, validando reglas de negocio.
         
-        :raises RuntimeError: Si el lavadero está ocupado (Requisito 3).
+        :raises ValueError: Si el lavadero está ocupado (Requisito 3).
         :raises ValueError: Si se intenta encerar sin secado a mano (Requisito 2).
         """
         if self.__ocupado:
-            raise RuntimeError("No se puede iniciar un nuevo lavado mientras el lavadero está ocupado")
         
+        # ERROR 1: Falla porque lanza RuntimeError en vez de ValueError
+        #   raise RuntimeError("No se puede iniciar un nuevo lavado mientras el lavadero está ocupado")
+        
+            raise ValueError("No se puede iniciar un nuevo lavado mientras el lavadero está ocupado")
         if not secado_a_mano and encerado:
             raise ValueError("No se puede encerar el coche sin secado a mano")
         
@@ -90,12 +93,19 @@ class Lavadero:
         if self.__prelavado_a_mano:
             coste_lavado += 1.50 
         
-        if self.__secado_a_mano:
-            coste_lavado += 1.20 
+        # ERROR 2: Los precios del encerado y del secado_a_mano están invertidos a cómo pone en los requisitos
+        # if self.__secado_a_mano:
+        #     coste_lavado += 1.20 
             
-        if self.__encerado:
+        # if self.__encerado:
+        #     coste_lavado += 1.00 
+            
+        if self.__secado_a_mano:
             coste_lavado += 1.00 
             
+        if self.__encerado:
+            coste_lavado += 1.20
+
         self.__ingresos += coste_lavado
         return coste_lavado
 
@@ -124,21 +134,28 @@ class Lavadero:
         elif self.__fase == self.FASE_ENJABONANDO:
             self.__fase = self.FASE_RODILLOS
         
+        # ERROR 3: Si hay secado o encerado va a fase 6 (secado automático) en vez de 7. Además nunca llega a fase 8.
+        # elif self.__fase == self.FASE_RODILLOS:
+        #     if self.__secado_a_mano:
+        #         self.__fase = self.FASE_SECADO_AUTOMATICO 
+
+        #     else:
+        #         self.__fase = self.FASE_SECADO_MANO
+        
         elif self.__fase == self.FASE_RODILLOS:
             if self.__secado_a_mano:
-                self.__fase = self.FASE_SECADO_AUTOMATICO 
+                self.__fase = self.FASE_SECADO_MANO 
 
             else:
-                self.__fase = self.FASE_SECADO_MANO
-        
+                self.__fase = self.FASE_SECADO_AUTOMATICO
+
+
         elif self.__fase == self.FASE_SECADO_AUTOMATICO:
             self.terminar()
         
         elif self.__fase == self.FASE_SECADO_MANO:
-
-            self.terminar() 
-        
-        elif self.__fase == self.FASE_ENCERADO:
+            if self.__encerado:
+                self.__fase = self.FASE_SECADO_MANO
             self.terminar() 
         
         else:
