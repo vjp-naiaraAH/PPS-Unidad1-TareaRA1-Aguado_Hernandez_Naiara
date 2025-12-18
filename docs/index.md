@@ -24,7 +24,7 @@ Esta actividad tiene los siguientes objetivos:
 
 ## Índice de contenidos
 
-- [1. Elementos de Python (Documentación del código)](#1-elementos-de-python-documentación-del-código)
+- [1. Elementos de Python (Documentación del código)](Actividad-Elementos-Programa-Phyton.ipynb)
 - [2. Ejecución y Depuración](ejecucion_depuracion.md)
 - [3. Pruebas unitarias](pruebas.md)
 - [4. Ejecución en Sandbox](sandboxing.md)
