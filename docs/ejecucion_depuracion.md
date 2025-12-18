@@ -8,7 +8,7 @@ EN EJECUCIÓN DE DEPURACIÓN
 ~~~
 python3 --version
 ~~~ 
-img8.png
+![version phyton](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img8.png)
 
 1. Seguidamente continué con la creación del entorno virtual con Python 
 ~~~bash
@@ -25,7 +25,7 @@ source .venv/bin/actívate
 ~~~bash
 pip install -r requirements.txt && pip install -e .
 ~~~
-img9.png
+![entorno virtual y dependencias](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img9.png)
 
 ### Primera ejecución del código
 Para ejecutar el programa se hace poniendo lo siguiente 
@@ -33,7 +33,7 @@ Para ejecutar el programa se hace poniendo lo siguiente
 PYTHONPATH=src python src/main_app.py
 ~~~
 Esta primera ejecución no se completará puesto que el código cuenta con múltiples errores como se puede ver a continuación *líneas rojas y moradas*
-img10.png
+![terminal ejecucion](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img10.png)
 
 Por lo tanto como la finalidad es que funcione correctamente es lo que voy ha hace a continuación.
 
@@ -49,7 +49,7 @@ La llamada al ejemplo 4 en 'main_app.py' no tenía el parámetro obligatorio 'en
 
 **Solución**
 Añadí 'encerado=False' en la llamada del Ejemplo 4.
-img11.png
+![fallo terminal](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img11.png)
 
 Ahora si vuelvo a ejecutar el código lo hará correctamente. 
 ~~~bash
@@ -60,7 +60,7 @@ Para finalizar la ejecución en ***terminal*** voy a salir y borrar el entorno v
 ~~~bash
 deactivate && rm -rf .venv
 ~~~
-img12.png
+![desactivar entorno virtual](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img12.png)
 
 ## Depuración visual en el IDE (Visual Studio Code)
 Utilicé el depurador de Visual Studio Code para analizar el flujo del programa paso a paso
@@ -69,18 +69,19 @@ Los breakpoints permiten detener la ejecución en líneas específicas para insp
 - La llamada al Ejemplo 1 en `main_app.py` (para observar el inicio de la simulación completa).
 - La línea `lavadero.hacerLavado(...)` (para ver cómo se configuran las opciones de lavado).
 - La línea `lavadero.avanzarFase()` dentro del bucle (para controlar el cambio de fases línea por línea).
-img13.png
+![ubicacion breakpoints](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img13.png)
 ### Ejecución del código con Run and Debug
 1. Hacer clic sobre el icono de `play+insecto` 
-img14.png
+![boton run and debug](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img14.png)
 1. Luego clic sobre el botón de `Run and Debug`
-img15.png
+![boton azul](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img15.png)
 1. Ahora se abrirá otro menú hacia abajo, en el que selecciono la opción `Python File`
+![file](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img17.png)
 En esta captura se aprecian los breakpoints (bolitas rojas), la línea parada (amarilla) y los valores iniciales de las variables del lavadero.
-img18.png
+![paron breakpoint](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img18.png)
 Al depurar el Ejemplo 1, observé que con `secado_a_mano = True` y `encerado = True`, la transición desde fase 5 (rodillos) iba directamente a fase 6 (secado automático), omitiendo las fases 7 y 8.
 En esta captura el depurador está parado en `avanzarFase()` con `fase = 5` y opciones de secado/encerado activadas. Al avanzar, pasa erróneamente a fase 6.
-img19.png
+![captura](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img19.png)
 **Causa**
 Lógica de transiciones invertida e incompleta en el método `avanzarFase` de `lavadero.py`.
 
