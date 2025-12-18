@@ -34,6 +34,7 @@ def ejecutarSimulacion(lavadero, prelavado, secado_mano, encerado):
         pasos = 0
         while lavadero.ocupado and pasos < 20: 
             # El cobro ahora ocurre en la primera llamada a avanzarFase (transición 0 -> 1)
+
             lavadero.avanzarFase()
             print(f"-> Fase actual: ", end="")
             lavadero.imprimir_fase()
@@ -80,4 +81,6 @@ if __name__ == "__main__":
     # Precio esperado: 5.00 + 1.50 = 6.50 €
     print("\n=======================================================")
     print("EJEMPLO 4: Prelavado (S), Secado a mano (N), Encerado (N)")
-    ejecutarSimulacion(lavadero_global, prelavado=True, secado_mano=False)
+    # ERROR 1: La llamada al Ejemplo 4 en `main_app.py` omitía el parámetro obligatorio `encerado` 
+    # ejecutarSimulacion(lavadero_global, prelavado=True, secado_mano=False)
+    ejecutarSimulacion(lavadero_global, prelavado=True, secado_mano=False, encerado=False)
