@@ -1,4 +1,3 @@
-EN EJECUCIÓN DE DEPURACIÓN 
 # Ejecución del programa mediante las opciones de Ejecución y Depuración de IDE
 
 ## Ejecución en terminal
@@ -34,6 +33,7 @@ Para ejecutar el programa se hace poniendo lo siguiente
 PYTHONPATH=src python src/main_app.py
 ~~~
 Esta primera ejecución no se completará puesto que el código cuenta con múltiples errores como se puede ver a continuación *líneas rojas y moradas*
+
 ![terminal ejecucion](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img10.png)
 
 Por lo tanto como la finalidad es que funcione correctamente es lo que voy ha hace a continuación.
@@ -87,8 +87,7 @@ En esta captura se aprecian los breakpoints (bolitas rojas), la línea parada (a
 Al depurar el Ejemplo 1, observé que con `secado_a_mano = True` y `encerado = True`, la transición desde fase 5 (rodillos) iba directamente a fase 6 (secado automático), omitiendo las fases 7 y 8.
 En esta captura el depurador está parado en `avanzarFase()` con `fase = 5` y opciones de secado/encerado activadas. Al avanzar, pasa erróneamente a fase 6.
 ![captura](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img19.png)
-**Causa**
-Lógica de transiciones invertida e incompleta en el método `avanzarFase` de `lavadero.py`.
 
-**Solución**
-Corregido en el Apartado 3 en las pruebas unitarias.
+- **Causa**: Lógica de transiciones invertida e incompleta en el método `avanzarFase` de `lavadero.py`.
+
+- **Solución**: Corregido en el Apartado 3 en las pruebas unitarias.
