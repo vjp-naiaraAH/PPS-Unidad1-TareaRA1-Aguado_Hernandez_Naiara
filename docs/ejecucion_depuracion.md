@@ -9,23 +9,23 @@ python3 --version
 ~~~ 
 ![version phyton](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img8.png)
 
-1. Seguidamente continué con la creación del entorno virtual con Python 
+2. Seguidamente continué con la creación del entorno virtual con Python 
 ~~~bash
 Python -m venv .venv
 ~~~
 
-2. Lo activé con la ejecución de 
+3. Lo activé con la ejecución de 
 ~~~bash
 # Al activarlo ahora en la terminal saldrá delante (.venv) como se ve en la siguiente captura de pantalla
 source .venv/bin/actívate
 ~~~
 
-3. También instalé las dependencias de la siguiente manera
+4. También instalé las dependencias de la siguiente manera
 ~~~bash
 pip install -r requirements.txt && pip install -e .
 ~~~
 ![entorno virtual y dependencias](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img9.png)
----
+
 
 ### Primera ejecución del código
 Para ejecutar el programa se hace poniendo lo siguiente 
@@ -36,8 +36,8 @@ Esta primera ejecución no se completará puesto que el código cuenta con múlt
 
 ![terminal ejecucion](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img10.png)
 
-Por lo tanto como la finalidad es que funcione correctamente es lo que voy ha hace a continuación.
----
+Por lo tanto como la finalidad es que funcione correctamente es lo que voy ha hacer a continuación.
+
 
 ### Errores hallados y posibles soluciones
 #### Error 1: Falta de parámetro en llamada a función
@@ -72,8 +72,9 @@ Los breakpoints permiten detener la ejecución en líneas específicas para insp
 - La llamada al Ejemplo 1 en `main_app.py` (para observar el inicio de la simulación completa).
 - La línea `lavadero.hacerLavado(...)` (para ver cómo se configuran las opciones de lavado).
 - La línea `lavadero.avanzarFase()` dentro del bucle (para controlar el cambio de fases línea por línea).
+
 ![ubicacion breakpoints](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img13.png)
----
+
 
 ### Ejecución del código con Run and Debug
 1. Hacer clic sobre el icono de `play+insecto` 
