@@ -15,17 +15,18 @@ python3 --version
 Python -m venv .venv
 ~~~
 
-1. Lo activé con la ejecución de 
+2. Lo activé con la ejecución de 
 ~~~bash
 # Al activarlo ahora en la terminal saldrá delante (.venv) como se ve en la siguiente captura de pantalla
 source .venv/bin/actívate
 ~~~
 
-1. También instalé las dependencias de la siguiente manera
+3. También instalé las dependencias de la siguiente manera
 ~~~bash
 pip install -r requirements.txt && pip install -e .
 ~~~
 ![entorno virtual y dependencias](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img9.png)
+---
 
 ### Primera ejecución del código
 Para ejecutar el programa se hace poniendo lo siguiente 
@@ -36,6 +37,7 @@ Esta primera ejecución no se completará puesto que el código cuenta con múlt
 ![terminal ejecucion](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img10.png)
 
 Por lo tanto como la finalidad es que funcione correctamente es lo que voy ha hace a continuación.
+---
 
 ### Errores hallados y posibles soluciones
 #### Error 1: Falta de parámetro en llamada a función
@@ -61,6 +63,7 @@ Para finalizar la ejecución en ***terminal*** voy a salir y borrar el entorno v
 deactivate && rm -rf .venv
 ~~~
 ![desactivar entorno virtual](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img12.png)
+---
 
 ## Depuración visual en el IDE (Visual Studio Code)
 Utilicé el depurador de Visual Studio Code para analizar el flujo del programa paso a paso
@@ -70,6 +73,8 @@ Los breakpoints permiten detener la ejecución en líneas específicas para insp
 - La línea `lavadero.hacerLavado(...)` (para ver cómo se configuran las opciones de lavado).
 - La línea `lavadero.avanzarFase()` dentro del bucle (para controlar el cambio de fases línea por línea).
 ![ubicacion breakpoints](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img13.png)
+---
+
 ### Ejecución del código con Run and Debug
 1. Hacer clic sobre el icono de `play+insecto` 
 ![boton run and debug](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img14.png)
