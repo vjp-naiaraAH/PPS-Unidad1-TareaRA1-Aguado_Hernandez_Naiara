@@ -1,7 +1,7 @@
 # Realización de los test unitarios de la app
 Lo primero que he hecho ha sido crear una carpeta llamada test, y dentro de la misma he creado un archivo llamado `test_lavadero_unittest.py`
 
-![creacion de archivos y carpetas](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img20.png)
+![creacion de archivos y carpetas](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img20.png)
 
 Dentro de este archivo he añadido las 14 pruebas `Testlavadero` utilizando *Unittest*, con 14 métodos de test correspondientes a cada requisito de la tarea.
 
@@ -19,7 +19,7 @@ En este paso como bien dice el título del mismo voy a ejecutar los test. Lo har
 Python -m unittest ./tests/test_lavadero_unittest.py -v
 ~~~
 el cual me ha dado el siguiente resultado:
-![resultado unnittest](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img21.png)
+![resultado unnittest](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img21.png)
 
 ---
 
@@ -34,7 +34,7 @@ el cual me ha dado el siguiente resultado:
 Falla porque lanzaba RuntimeError en vez de ValueError
 **Solución**
 Cambié RuntimeError por ValueError
-![Error 1 unittest](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img22.png)
+![Error 1 unittest](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img22.png)
 
 
 ### Error 2: precios
@@ -42,7 +42,7 @@ Cambié RuntimeError por ValueError
 Los precios del encerado y del secado a mano daban erróneos puesto que estaban invertidos a cómo están definidos en las premisas
 **Solución**
 Poner los precios que ponen en las premisas.
-![error 2 unittest](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img23.png)
+![error 2 unittest](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img23.png)
 
 
 ### Error 3: flujo de fases
@@ -50,7 +50,7 @@ Poner los precios que ponen en las premisas.
 Si hay secado o encerado va a fase 6 (secado automático) en vez de 7. Además nunca llega a fase 8. 
 **Solución**
 Poner tal cual lo que hay en la imagen a continuación
-![error 3 unittest](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img24.png)
+![error 3 unittest](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img24.png)
 
 ---
 
@@ -60,7 +60,7 @@ Después de corregir los fallos mencionados anteriormente volví a ejecutar los 
 Python -m unittest ./tests/test_lavadero_unittest.py -v
 ~~~
 Y ahora ya todos los test dan ok.
-![todo ok](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img23.png)
+![todo ok](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img25.png)
 
 ---
 

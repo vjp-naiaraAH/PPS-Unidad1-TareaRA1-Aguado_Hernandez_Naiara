@@ -33,7 +33,7 @@ sudo apt install firejail
 ~~~ 
 para instalar el software firejail por si acaso no está instalado en Kali aún.
 
-![instalar firejail](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img26.png)
+![instalar firejail](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img26.png)
 ---
 
 Ejecuto en la terminal 
@@ -42,7 +42,7 @@ sudo apt install firejail firetools
 ~~~
 puesto que es necesario ambos paquetes para poder usar correctamente el *Sandbox*.
 
-![instalar firetools](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img27.png)
+![instalar firetools](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img27.png)
 ---
 
 ### Ejecucion del Sandbox
@@ -168,12 +168,12 @@ TypeError: ejecutarSimulacion() missing 1 required positional argument: 'encerad
 Parent is shutting down, bye...
 ~~~
 
-![imagen](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img28.png)
+![imagen](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img28.png)
 ---
 
 Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox completamente aislado del resto del sistema. Esto confirma que la aplicación queda protegida aunque sea maliciosa o tenga vulnerabilidades. La opción `--debug` muestra en pantalla todo lo que Firejail está haciendo.
 
-![ejecucion sandbox](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img29.png)
+![ejecucion sandbox](https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img29.png)
 
 ---
 
