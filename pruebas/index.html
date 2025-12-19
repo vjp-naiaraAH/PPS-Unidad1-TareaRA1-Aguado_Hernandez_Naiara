@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Realización de los test unitarios de la app - PPS-Unidad1-TareaRA1-Aguado-Hernandez-Naiara</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PPS-Unidad1-TareaRA1-Aguado-Hernandez-Naiara</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../guia_uso.md" class="nav-link">Uso</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#realizacion-de-los-test-unitarios-de-la-app" class="nav-link">Realización de los test unitarios de la app</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#pruebas-realizadas" class="nav-link">Pruebas realizadas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ejecucion-de-los-test-unitarios" class="nav-link">Ejecución de los test unitarios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#correccion-de-fallos" class="nav-link">Corrección de fallos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#ejecucion-despues-de-correccion" class="nav-link">Ejecución después de corrección</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusion" class="nav-link">Conclusión</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="realizacion-de-los-test-unitarios-de-la-app">Realización de los test unitarios de la app</h1>
+<p>Lo primero que he hecho ha sido crear una carpeta llamada test, y dentro de la misma he creado un archivo llamado <code>test_lavadero_unittest.py</code></p>
+<p><img alt="creacion de archivos y carpetas" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img20.png" /></p>
+<p>Dentro de este archivo he añadido las 14 pruebas <code>Testlavadero</code> utilizando <em>Unittest</em>, con 14 métodos de test correspondientes a cada requisito de la tarea.</p>
+<hr />
+<h2 id="pruebas-realizadas">Pruebas realizadas</h2>
+<ul>
+<li>Test 1-3: Estado inicial y excepciones (ValueError)</li>
+<li>Test 4-8: Cálculo correcto de ingresos según opciones</li>
+<li>Test 9-14: Secuencia exacta de fases para cada combinación de opciones (usando una función auxiliar <code>ejecutar_y_obtener_fases</code>)</li>
+</ul>
+<hr />
+<h2 id="ejecucion-de-los-test-unitarios">Ejecución de los test unitarios</h2>
+<p>En este paso como bien dice el título del mismo voy a ejecutar los test. Lo haré con el uso del siguiente comando:</p>
+<pre><code class="language-bash">Python -m unittest ./tests/test_lavadero_unittest.py -v
+</code></pre>
+<p>el cual me ha dado el siguiente resultado:
+<img alt="resultado unnittest" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img21.png" /></p>
+<hr />
+<h2 id="correccion-de-fallos">Corrección de fallos</h2>
+<ul>
+<li>ERROR en test 3: Lanza RuntimeError en vez de ValueError cuando el lavadero está ocupado</li>
+<li>FAIL en test 5 &amp; 7: precios de secado incorrectos (6.20 y 7.70 en vez de 6.00 y 7.50).</li>
+<li>FAIL en test 9 a 14: flujo de fases mal (siempre va a la fase 6 o 7 cuando no debe y nunca llega a la fase 8)</li>
+</ul>
+<h3 id="error-1-excepcion-lavadero-ocupado">Error 1: excepción lavadero ocupado</h3>
+<p><strong>Causa</strong>
+Falla porque lanzaba RuntimeError en vez de ValueError
+<strong>Solución</strong>
+Cambié RuntimeError por ValueError
+<img alt="Error 1 unittest" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img22.png" /></p>
+<h3 id="error-2-precios">Error 2: precios</h3>
+<p><strong>Causa</strong>
+Los precios del encerado y del secado a mano daban erróneos puesto que estaban invertidos a cómo están definidos en las premisas
+<strong>Solución</strong>
+Poner los precios que ponen en las premisas.
+<img alt="error 2 unittest" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img23.png" /></p>
+<h3 id="error-3-flujo-de-fases">Error 3: flujo de fases</h3>
+<p><strong>Causa</strong>
+Si hay secado o encerado va a fase 6 (secado automático) en vez de 7. Además nunca llega a fase 8. 
+<strong>Solución</strong>
+Poner tal cual lo que hay en la imagen a continuación
+<img alt="error 3 unittest" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img24.png" /></p>
+<hr />
+<h2 id="ejecucion-despues-de-correccion">Ejecución después de corrección</h2>
+<p>Después de corregir los fallos mencionados anteriormente volví a ejecutar los test unitarios usando el comando mencionado anteriormente:</p>
+<pre><code class="language-bash">Python -m unittest ./tests/test_lavadero_unittest.py -v
+</code></pre>
+<p>Y ahora ya todos los test dan ok.
+<img alt="todo ok" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img25.png" /></p>
+<hr />
+<h2 id="conclusion">Conclusión</h2>
+<p>Las 14 pruebas unitarias implementadas con <code>unittest</code> cubrieron todos los requisitos, detectando y permitiendo corregir errores en precios, flujo de fases y excepciones. El resultado final con todos los tests pasando confirma la corrección y robustez de la aplicación.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

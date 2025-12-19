@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>PPS-Unidad1-TareaRA1-Aguado-Hernandez-Naiara</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">PPS-Unidad1-TareaRA1-Aguado-Hernandez-Naiara</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="guia_uso.md" class="nav-link">Uso</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#unidad-1-tarea-ra1-prueba-de-aplicaciones" class="nav-link">Unidad 1 - Tarea RA1: Prueba de Aplicaciones</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#objetivos-de-la-tarea" class="nav-link">Objetivos de la tarea</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#indice-de-contenidos" class="nav-link">Índice de contenidos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#1-elementos-de-python-documentacion-del-codigo" class="nav-link">1. Elementos de Python (Documentación del código)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-ejecucion-y-depuracion" class="nav-link">2. Ejecución y Depuración</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-pruebas-unitarias" class="nav-link">3. Pruebas unitarias</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-ejecucion-en-sandbox" class="nav-link">4. Ejecución en Sandbox</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-reflexion-sobre-seguridad-de-lenguajes" class="nav-link">5. Reflexión sobre seguridad de lenguajes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#herramientas-utilizadas" class="nav-link">Herramientas utilizadas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="unidad-1-tarea-ra1-prueba-de-aplicaciones">Unidad 1 - Tarea RA1: Prueba de Aplicaciones</h1>
+<p><strong>Aplicación: Lavadero de coches</strong><br />
+<strong>Alumna</strong>: Naiara Aguado Hernández<br />
+<strong>Fecha</strong>: 19 de diciembre de 2025  </p>
+<hr />
+<h2 id="objetivos-de-la-tarea">Objetivos de la tarea</h2>
+<p>Esta actividad tiene los siguientes objetivos:</p>
+<ul>
+<li>
+<p>Analizar y comprender la estructura interna del código (clases, métodos, flujos de control) y su modelo de ejecución (transiciones de estado y manejo de excepciones) para determinar los puntos críticos de prueba.</p>
+</li>
+<li>
+<p>Aplicar las herramientas del IDE (Integrated Development Environment) para la ejecución, depuración paso a paso y seguimiento del flujo de control, identificando y resolviendo posibles errores lógicos o de sintaxis.</p>
+</li>
+<li>
+<p>Diseñar, implementar y ejecutar pruebas unitarias que cubran la totalidad de los requisitos funcionales y no funcionales, validando la lógica individual de cada componente del código.</p>
+</li>
+<li>
+<p>Verificar que la aplicación maneja correctamente las reglas de negocio (precios, transiciones de fase y gestión de estados de error), tal como se define en la documentación.</p>
+</li>
+<li>
+<p>Ejecutar la aplicación en un entorno controlado para simular su comportamiento en un contexto real, validando la interacción entre sus componentes y el entorno de runtime.</p>
+</li>
+</ul>
+<hr />
+<h2 id="indice-de-contenidos">Índice de contenidos</h2>
+<ul>
+<li><a href="Actividad-Elementos-Programa-Phyton.ipynb">1. Elementos de Python (Documentación del código)</a></li>
+<li><a href="ejecucion_depuracion/">2. Ejecución y Depuración</a></li>
+<li><a href="pruebas/">3. Pruebas unitarias</a></li>
+<li><a href="sandboxing/">4. Ejecución en Sandbox</a></li>
+<li><a href="reflexion/">5. Reflexión sobre seguridad de lenguajes</a></li>
+</ul>
+<hr />
+<h2 id="1-elementos-de-python-documentacion-del-codigo">1. Elementos de Python (Documentación del código)</h2>
+<p>He documentado detalladamente el código fuente <code>lavadero.py</code> mediante un <strong>Jupyter Notebook</strong> donde explico línea por línea la estructura, constantes, métodos y flujo de control del programa.</p>
+<h3 id="resumen-de-elementos-clave-documentados">Resumen de elementos clave documentados</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Descripción breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class Lavadero</code></td>
+<td>Clase principal que simula el túnel de lavado</td>
+</tr>
+<tr>
+<td>Constantes <code>FASE_*</code></td>
+<td>Representan las 9 fases del proceso (0-8)</td>
+</tr>
+<tr>
+<td><code>__init__</code></td>
+<td>Inicializa el lavadero cumpliendo requisito 1</td>
+</tr>
+<tr>
+<td><code>@property</code></td>
+<td>Acceso de solo lectura a atributos privados</td>
+</tr>
+<tr>
+<td><code>terminar()</code></td>
+<td>Restablece el estado inicial</td>
+</tr>
+<tr>
+<td><code>hacerLavado(...)</code></td>
+<td>Inicia lavado con validación de reglas (requisitos 2 y 3)</td>
+</tr>
+<tr>
+<td><code>_cobrar()</code></td>
+<td>Cálculo de ingresos según opciones (requisitos 4-8)</td>
+</tr>
+<tr>
+<td><code>avanzarFase()</code></td>
+<td>Gestión del flujo de fases (requisitos 9-14)</td>
+</tr>
+<tr>
+<td><code>imprimir_estado()</code></td>
+<td>Visualización completa del estado actual</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-ejecucion-y-depuracion">2. Ejecución y Depuración</h2>
+<p>He ejecutado la aplicación en el IDE VS Code, tanto en terminal como con depuración visual, identificando y corrigiendo errores de sintaxis y lógicos.</p>
+<h3 id="resumen-de-actividades-realizadas">Resumen de actividades realizadas</h3>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Descripción breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ejecución en terminal</td>
+<td>Uso del comando <code>PYTHONPATH=src python3 src/main_app.py</code></td>
+</tr>
+<tr>
+<td>Corrección de errores</td>
+<td>TypeError por parámetro faltante y otros errores iniciales</td>
+</tr>
+<tr>
+<td>Depuración visual</td>
+<td>Breakpoints, panel de variables, avance paso a paso (F10)</td>
+</tr>
+<tr>
+<td>Detección de errores lógicos</td>
+<td>Transiciones incorrectas en fases (detectado en fase 5)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-pruebas-unitarias">3. Pruebas unitarias</h2>
+<p>He diseñado e implementado 14 pruebas unitarias con <code>unittest</code> que cubren todos los requisitos funcionales (precios, excepciones, flujo de fases).</p>
+<h3 id="resumen-de-pruebas-realizadas">Resumen de pruebas realizadas</h3>
+<table>
+<thead>
+<tr>
+<th>Tipo de prueba</th>
+<th>Descripción breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test 1</td>
+<td>Estado inicial del lavadero</td>
+</tr>
+<tr>
+<td>Tests 2-3</td>
+<td>Excepciones ValueError (requisitos 2 y 3)</td>
+</tr>
+<tr>
+<td>Tests 4-8</td>
+<td>Cálculo correcto de ingresos según opciones</td>
+</tr>
+<tr>
+<td>Tests 9-14</td>
+<td>Secuencia exacta de fases para cada combinación de opciones</td>
+</tr>
+<tr>
+<td>Ejecución final</td>
+<td>Todos los tests pasan con <code>-v</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-ejecucion-en-sandbox">4. Ejecución en Sandbox</h2>
+<p>He ejecutado la aplicación en un entorno aislado usando <strong>Firejail</strong> en Kali Linux, demostrando el aislamiento completo del programa.</p>
+<h3 id="resumen-de-actividades-realizadas_1">Resumen de actividades realizadas</h3>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Descripción breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instalación</td>
+<td><code>sudo apt install firejail firetools</code></td>
+</tr>
+<tr>
+<td>Ejecución</td>
+<td><code>firejail --private=. python3 main_app.py</code></td>
+</tr>
+<tr>
+<td>Aislamiento</td>
+<td>Sin acceso a red, archivos reales ni otros procesos</td>
+</tr>
+<tr>
+<td>Resultado</td>
+<td>Programa ejecutado correctamente dentro del sandbox</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-reflexion-sobre-seguridad-de-lenguajes">5. Reflexión sobre seguridad de lenguajes</h2>
+<p>Reflexión personal comparando medidas de seguridad en lenguajes como Python, Java, Rust y C/C++, basada en contenidos teóricos y búsquedas.</p>
+<h3 id="temas-tratados">Temas tratados</h3>
+<table>
+<thead>
+<tr>
+<th>Tema</th>
+<th>Descripción breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manejo de memoria</td>
+<td>Python (GC) vs Rust (ownership) vs C (manual)</td>
+</tr>
+<tr>
+<td>Excepciones y errores</td>
+<td>Try/except en Python vs checked exceptions en Java</td>
+</tr>
+<tr>
+<td>Vulnerabilidades comunes</td>
+<td>Inyecciones, overflows, race conditions</td>
+</tr>
+<tr>
+<td>Lenguajes más seguros</td>
+<td>Rust como referente actual</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="herramientas-utilizadas">Herramientas utilizadas</h2>
+<ul>
+<li><strong>IDE</strong>: Visual Studio Code  </li>
+<li><strong>Documentación del código</strong>: Jupyter Notebook (.ipynb)  </li>
+<li><strong>Depuración</strong>: Run and Debug integrado  </li>
+<li><strong>Pruebas</strong>: unittest  </li>
+<li><strong>Sandbox</strong>: Firejail en Kali Linux  </li>
+<li><strong>Documentación final</strong>: MkDocs con tema Material  </li>
+<li><strong>Repositorio</strong>: GitHub + GitHub Pages  </li>
+</ul>
+<hr />
+<p>Aguado Hernández Naiara </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2025-12-19 10:58:56.946185+00:00
+-->

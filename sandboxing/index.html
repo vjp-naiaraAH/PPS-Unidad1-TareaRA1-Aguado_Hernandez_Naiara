@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Sandbox - PPS-Unidad1-TareaRA1-Aguado-Hernandez-Naiara</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PPS-Unidad1-TareaRA1-Aguado-Hernandez-Naiara</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../guia_uso.md" class="nav-link">Uso</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#sandbox" class="nav-link">Sandbox</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#prueba-de-aplicacion-en-un-entorno-controlado-sandboxing" class="nav-link">Prueba de aplicacion en un entorno controlado (Sandboxing)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_2" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#_3" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusiones-y-reflexion" class="nav-link">Conclusiones y reflexion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="sandbox">Sandbox</h1>
+<p>Un <strong><em>sandbox</em></strong> es un <strong>entorno controlado</strong>, aislado y seguro que se utiliza para ejecutar programas, procesar archivos o probar código sin que estos tengan la capacidad de afectar al sistema operativo principal ni a otros recursos críticos. La idea es crear un “espacio cerrado”, como una caja de arena donde los niños juegan sin peligro, pero aplicado a la informática.</p>
+<h3 id="para-que-sirve">¿Para que sirve?</h3>
+<ul>
+<li>Probar programas o código sin riesgo de daña el sistema</li>
+<li>Analizar archivos sospechosos (como por ejemplo malware) sin infectar el equipo.</li>
+<li>Ejecutar aplicaciones con permisos muy limitados</li>
+<li>Simular entornos para desarrollo o experimentación</li>
+</ul>
+<h3 id="como-funciona">¿Como funciona?</h3>
+<p>Un <strong>sandbox</strong> funciona creando un entorno aislado donde un programa puede ejecutarse sin afectar al sistema real. Para lograrlo, limita los permisos del software: controla qué archivos puede tocar, qué procesos puede ver, cuánta memoria puede usar o si puede acceder a internet. Cada acción que intenta realizar pasa por un <strong>filtro de seguridad</strong>, y el sandbox decide si permitirla o bloquearla.</p>
+<p>Además, utiliza un <strong>sistema de archivos temporal</strong> donde todo lo que el programa hace queda encerrado. De este modo, aunque intente modificar el sistema o comportarse de forma peligrosa, los cambios quedan atrapados en ese espacio aislado y se eliminan al cerrar el sandbox. Esto permite <em>probar código, analizar archivos</em> o <em>ejecutar software desconocido</em> sin riesgos.</p>
+<h3 id="ejemplos-de-sandbox">Ejemplos de Sandbox</h3>
+<ul>
+<li>Máquinas virtuales (VirtualBox, VMware)</li>
+<li>Espacios de pruebas en navegadores (Chrome Sandbox)</li>
+<li>Herramientas coo Firejail, Sandboxie o Docker</li>
+</ul>
+<hr />
+<h2 id="prueba-de-aplicacion-en-un-entorno-controlado-sandboxing">Prueba de aplicacion en un entorno controlado (Sandboxing)</h2>
+<p>En esta actividad voy a documentar como he podido realizar la prueba de la aplicación lavadero en un entorno controlado. 
+Los objetivos de la actividad han sido:
+- Conocer como se puede ejecutar programas, malware, etc en entornos controlados y aislados para su análisis
+- Ser capaz de hacer Sandboxing de un programa</p>
+<hr />
+<h3 id="instalacion-de-firejail-y-firetools">Instalacion de Firejail y Firetools</h3>
+<p>Ejecuto en el terminal de Kali </p>
+<pre><code>sudo apt install firejail
+</code></pre>
+<p>para instalar el software firejail por si acaso no está instalado en Kali aún.</p>
+<h2 id="_1"><img alt="instalar firejail" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img26.png" /></h2>
+<p>Ejecuto en la terminal </p>
+<pre><code>sudo apt install firejail firetools
+</code></pre>
+<p>puesto que es necesario ambos paquetes para poder usar correctamente el <em>Sandbox</em>.</p>
+<h2 id="_2"><img alt="instalar firetools" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img27.png" /></h2>
+<h3 id="ejecucion-del-sandbox">Ejecucion del Sandbox</h3>
+<p>Ahora sí ejecuto el programa dentro del Sandbox (entorno seguro) usando el comando </p>
+<pre><code>firejail --private=. python3 main_app.py
+</code></pre>
+<p>Que sería el sandbox más básico de firejail
+El resultado completo del firejail es el siguiente</p>
+<pre><code>Reading profile /etc/firejail/default.profile
+Reading profile /etc/firejail/disable-common.inc
+Reading profile /etc/firejail/disable-programs.inc
+Reading profile /etc/firejail/landlock-common.inc
+Warning: networking feature is disabled in Firejail configuration file
+
+** Note: you can use --noprofile to disable default.profile **
+
+firejail version 0.9.76
+
+Parent pid 26642, child pid 26643
+Warning: not remounting /var/lib/docker/overlay2/496d8f236f4874b190794e236f2699f12cbfc8a8a534fed6a4b1642cb1115c89/merged
+Warning: not remounting /var/lib/docker/overlay2/c2b0fd92f4725f7bea99b07c335d646ec916132594f479316b3a19e5bd2a08de/merged
+Warning: not remounting /var/lib/docker/overlay2/d2b2ff36569c4cc0893906ad61458840c88f3f70ef3c41384022d9558e4c4ee7/merged
+Warning: not remounting /var/lib/docker/overlay2/7391c3341c935e0a627994b4db7fa67612122c6bb9501220ec77d122f4d01a14/merged
+Warning: not remounting /var/lib/docker/overlay2/80f06f3463329cda539086cb9cbd8a7b4509bb0dbcdad15d549a62d957ed4e2c/merged
+Warning: not remounting /var/lib/docker/overlay2/496d8f236f4874b190794e236f2699f12cbfc8a8a534fed6a4b1642cb1115c89/merged
+Warning: not remounting /var/lib/docker/overlay2/c2b0fd92f4725f7bea99b07c335d646ec916132594f479316b3a19e5bd2a08de/merged
+Warning: not remounting /var/lib/docker/overlay2/d2b2ff36569c4cc0893906ad61458840c88f3f70ef3c41384022d9558e4c4ee7/merged
+Warning: not remounting /var/lib/docker/overlay2/7391c3341c935e0a627994b4db7fa67612122c6bb9501220ec77d122f4d01a14/merged
+Warning: not remounting /var/lib/docker/overlay2/80f06f3463329cda539086cb9cbd8a7b4509bb0dbcdad15d549a62d957ed4e2c/merged
+Warning: cannot find /var/run/utmp
+Base filesystem installed in 34.50 ms
+Child process initialized in 84.63 ms
+
+=======================================================
+EJEMPLO 1: Prelavado (S), Secado a mano (S), Encerado (S)
+--- INICIO: Prueba de Lavado con Opciones Personalizadas ---
+Opciones solicitadas: [Prelavado: True, Secado a mano: True, Encerado: True]
+
+Coche entra. Estado inicial:
+----------------------------------------
+Ingresos Acumulados: 0.00 €
+Ocupado: True
+Prelavado a mano: True
+Secado a mano: True
+Encerado: True
+Fase: 0 - Inactivo
+----------------------------------------
+
+AVANZANDO FASE POR FASE:
+ (COBRADO: 8.70 €) -&gt; Fase actual: 1 - Cobrando
+-&gt; Fase actual: 2 - Haciendo prelavado a mano
+-&gt; Fase actual: 3 - Echándole agua
+-&gt; Fase actual: 4 - Enjabonando
+-&gt; Fase actual: 5 - Pasando rodillos
+-&gt; Fase actual: 6 - Haciendo secado automático
+-&gt; Fase actual: 0 - Inactivo
+
+----------------------------------------
+Lavado completo. Estado final:
+----------------------------------------
+Ingresos Acumulados: 8.70 €
+Ocupado: False
+Prelavado a mano: False
+Secado a mano: False
+Encerado: False
+Fase: 0 - Inactivo
+----------------------------------------
+Ingresos acumulados: 8.70 €
+----------------------------------------
+
+=======================================================
+EJEMPLO 2: Sin extras (Prelavado: N, Secado a mano: N, Encerado: N)
+--- INICIO: Prueba de Lavado con Opciones Personalizadas ---
+Opciones solicitadas: [Prelavado: False, Secado a mano: False, Encerado: False]
+
+Coche entra. Estado inicial:
+----------------------------------------
+Ingresos Acumulados: 8.70 €
+Ocupado: True
+Prelavado a mano: False
+Secado a mano: False
+Encerado: False
+Fase: 0 - Inactivo
+----------------------------------------
+
+AVANZANDO FASE POR FASE:
+ (COBRADO: 5.00 €) -&gt; Fase actual: 1 - Cobrando
+-&gt; Fase actual: 3 - Echándole agua
+-&gt; Fase actual: 4 - Enjabonando
+-&gt; Fase actual: 5 - Pasando rodillos
+-&gt; Fase actual: 7 - Haciendo secado a mano
+-&gt; Fase actual: 0 - Inactivo
+
+----------------------------------------
+Lavado completo. Estado final:
+----------------------------------------
+Ingresos Acumulados: 13.70 €
+Ocupado: False
+Prelavado a mano: False
+Secado a mano: False
+Encerado: False
+Fase: 0 - Inactivo
+----------------------------------------
+Ingresos acumulados: 13.70 €
+----------------------------------------
+
+=======================================================
+EJEMPLO 3: ERROR (Encerado S, Secado a mano N)
+--- INICIO: Prueba de Lavado con Opciones Personalizadas ---
+Opciones solicitadas: [Prelavado: False, Secado a mano: False, Encerado: True]
+ERROR DE ARGUMENTO: No se puede encerar el coche sin secado a mano
+
+=======================================================
+EJEMPLO 4: Prelavado (S), Secado a mano (N), Encerado (N)
+Traceback (most recent call last):
+  File &quot;/home/PPSnaiara/main_app.py&quot;, line 83, in &lt;module&gt;
+    ejecutarSimulacion(lavadero_global, prelavado=True, secado_mano=False)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ejecutarSimulacion() missing 1 required positional argument: 'encerado'
+
+Parent is shutting down, bye...
+</code></pre>
+<h2 id="_3"><img alt="imagen" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img28.png" /></h2>
+<p>Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox completamente aislado del resto del sistema. Esto confirma que la aplicación queda protegida aunque sea maliciosa o tenga vulnerabilidades. La opción <code>--debug</code> muestra en pantalla todo lo que Firejail está haciendo.</p>
+<p><img alt="ejecucion sandbox" src="https://raw.githubusercontent.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/refs/heads/main/docs/images/img29.png" /></p>
+<hr />
+<h2 id="conclusiones-y-reflexion">Conclusiones y reflexion</h2>
+<p>Gracias al uso de Firejail con la opción <code>--private</code>, la aplicación Python se ejecutó en un entorno completamente aislado:</p>
+<ul>
+<li>No tiene acceso al sistema de archivos real del host</li>
+<li>No puede acceder a la red</li>
+<li>No puede ver ni interactuar con otros procesos</li>
+<li>Cualquier cambio realizado desaparece al cerrar el sandbox</li>
+</ul>
+<p>Esto demuestra que incluso si el script hubiera sido malicioso, no podría haber afectado al sistema real de Kali Linux.</p>
+<p>Firejail es una herramienta extremadamente ligera y eficaz para sandboxing rápido de aplicaciones en Linux, ideal tanto para análisis de malware como para ejecutar software de procedencia desconocida con seguridad.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
