@@ -93,3 +93,9 @@ En esta captura el depurador está parado en `avanzarFase()` con `fase = 5` y op
 - **Causa**: Lógica de transiciones invertida e incompleta en el método `avanzarFase` de `lavadero.py`.
 
 - **Solución**: Corregido en el Apartado 3 en las pruebas unitarias.
+
+---
+
+## Conclusión
+
+La ejecución en terminal permitió detectar y corregir errores de sintaxis, mientras que la depuración visual con breakpoints y panel de variables reveló errores lógicos en el flujo de fases. Estas herramientas del IDE fueron esenciales para garantizar un comportamiento correcto antes de pasar a las pruebas unitarias.

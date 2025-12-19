@@ -61,3 +61,9 @@ Python -m unittest ./tests/test_lavadero_unittest.py -v
 ~~~
 Y ahora ya todos los test dan ok.
 ![todo ok](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img23.png)
+
+---
+
+## Conclusión
+
+Las 14 pruebas unitarias implementadas con `unittest` cubrieron todos los requisitos, detectando y permitiendo corregir errores en precios, flujo de fases y excepciones. El resultado final con todos los tests pasando confirma la corrección y robustez de la aplicación.

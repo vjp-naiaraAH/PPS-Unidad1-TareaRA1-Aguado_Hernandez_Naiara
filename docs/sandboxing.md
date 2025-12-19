@@ -26,19 +26,23 @@ Los objetivos de la actividad han sido:
 - Ser capaz de hacer Sandboxing de un programa
 
 ---
-2### Instalacion de Firejail y Firetools
+### Instalacion de Firejail y Firetools
 Ejecuto en el terminal de Kali 
 ~~~
 sudo apt install firejail
 ~~~ 
 para instalar el software firejail por si acaso no está instalado en Kali aún.
 
-![instalar firejail](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img26.png)
+![instalar firejail](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img26.png)
 ---
 
-Ejecuto en la terminal sudo apt install firejail firetools puesto que es necesario ambos paquetes para poder usar correctamente el *Sandbox*.
+Ejecuto en la terminal 
+~~~
+sudo apt install firejail firetools
+~~~
+puesto que es necesario ambos paquetes para poder usar correctamente el *Sandbox*.
 
-![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img27.png)
+![github](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img27.png)
 ---
 
 ### Ejecucion del Sandbox
@@ -164,12 +168,12 @@ TypeError: ejecutarSimulacion() missing 1 required positional argument: 'encerad
 Parent is shutting down, bye...
 ~~~
 
-![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img28.png)
+![github](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img28.png)
 ---
 
 Como se ve en la próxima imágen, el programa se ejecuta dentro de un sandbox completamente aislado del resto del sistema. Esto confirma que la aplicación queda protegida aunque sea maliciosa o tenga vulnerabilidades. La opción `--debug` muestra en pantalla todo lo que Firejail está haciendo.
 
-![github](https://github.com/vjp-naiaraAH/PPSUnidad1-ActividadSandboxing-naiara/blob/main/docs/images/img29.png)
+![github](https://github.com/vjp-naiaraAH/PPS-Unidad1-TareaRA1-Aguado_Hernandez_Naiara/blob/main/docs/images/img29.png)
 
 ---
 
